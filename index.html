@@ -10,45 +10,39 @@
   </head>
   <body>
     <!-- header -->
-    <header class="header h-screen bg-[var(--bg-color)] mb-8">
+    <header class="w-[144rem] h-[73.6rem] bg-[var(--bg-color)] mb-8">
       <!-- navbar -->
-      <div class="w-full h-[8rem] fixed bg-[var(--bg-color)] z-10">
-        <div class="container mx-auto h-full grid grid-cols-12 gap-4">
+      <nav
+        class="w-full h-[11.7rem] mx-auto fixed bg-[var(--bg-color)] z-10 flex items-center justify-center"
+      >
+        <div class="w-[111rem] mx-auto h-[4rem] flex items-center">
           <!-- Logo -->
-          <div
-            class="logo col-span-12 md:col-span-2 h-full flex justify-center items-center text-[var(--main-color)]"
-          >
-            <p class="text-5xl font-bold">Besnik.</p>
+          <div class="w-[10.7rem] h-[2.4rem]">
+            <img src="./Logo.png" alt="BESNIK" />
           </div>
           <!-- Menu -->
-          <div class="menu col-span-5 hidden md:flex h-full mx-[-1rem]">
-            <ul
-              class="w-full flex justify-start items-center h-full text-[var(--text-color)] gap-10"
-            >
-              <li>Home</li>
-              <li>Features</li>
-              <li>Services</li>
-              <li>Resources</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-          <!-- Authentication -->
-          <div
-            class="authentication col-span-2 col-start-11 h-full ml-auto hidden md:flex items-center justify-around space-x-4"
+          <ul
+            class="w-[40.6rem] h-[2.1rem] ml-[6.4rem] flex gap-[2.8rem] font-medium color-[var(--text-color)]"
           >
-            <button
-              class="bg-transparent text-[var(--main-color)] h-auto px-4 py-2"
+            <li>Home</li>
+            <li>Features</li>
+            <li>Services</li>
+            <li>Resources</li>
+            <li>Contact</li>
+          </ul>
+          <!-- Authentication -->
+          <div class="w-[16.4rem] h-full ml-auto font-medium flex">
+            <a class="font-medium flex justify-center items-center" href=""
+              >Sign in</a
             >
-              Sign In
-            </button>
-            <button
-              class="bg-[var(--main-color)] text-white h-auto px-4 py-2 rounded-lg"
+            <a
+              class="w-[9.8rem] h-full rounded-[0.8rem] bg-[var(--main-color)] text-white flex justify-center items-center ml-[1.7rem]"
+              href=""
+              >Sign up</a
             >
-              Sign Up
-            </button>
           </div>
         </div>
-      </div>
+      </nav>
       <!-- header-contain -->
       <div
         class="container mx-auto h-screen pt-[8rem] flex flex-col md:flex-row items-center"
