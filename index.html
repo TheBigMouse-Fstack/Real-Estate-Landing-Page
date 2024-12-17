@@ -5,8 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 1</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p></p>
+    <!-- header -->
+    <header class="header h-screen bg-[var(--bg-color)] mb-8">
+      <!-- navbar -->
+      <div class="w-full h-[8rem] fixed bg-[var(--bg-color)] z-10">
+        <div class="container mx-auto h-full grid grid-cols-12 gap-4">
+          <!-- Logo -->
+          <div
+            class="logo col-span-12 md:col-span-2 h-full flex justify-center items-center text-[var(--main-color)]"
+          >
+            <p class="text-5xl font-bold">Besnik.</p>
+          </div>
+          <!-- Menu -->
+          <div class="menu col-span-5 hidden md:flex h-full mx-[-1rem]">
+            <ul
+              class="w-full flex justify-start items-center h-full text-[var(--text-color)] gap-10"
+            >
+              <li>Home</li>
+              <li>Features</li>
+              <li>Services</li>
+              <li>Resources</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <!-- Authentication -->
+          <div
+            class="authentication col-span-2 col-start-11 h-full ml-auto hidden md:flex items-center justify-around space-x-4"
+          >
+            <button
+              class="bg-transparent text-[var(--main-color)] h-auto px-4 py-2"
+            >
+              Sign In
+            </button>
+            <button
+              class="bg-[var(--main-color)] text-white h-auto px-4 py-2 rounded-lg"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- header-contain -->
+      <div
+        class="container mx-auto h-screen pt-[8rem] flex flex-col md:flex-row items-center"
+      >
+        <!-- img -->
+        <div class="image w-full md:w-[45%] md:order-2 h-full">
+          <img
+            src="./image.png"
+            alt="home"
+            class="h-full w-full object-cover"
+          />
+        </div>
+        <!-- welcome -->
+        <div
+          class="welcome w-full md:w-[55%] h-full px-4 md:px-[4.5rem] md:pr-[5rem] md:order-1"
+        >
+          <h5 class="text-[var(--text-color)] mt-[2rem] md:mt-[8rem]">
+            Welcome to Besnik Agency
+          </h5>
+          <h1
+            class="text-[var(--main-color)] text-4xl sm:text-5xl md:text-8xl pb-8 pt-4"
+          >
+            Discover a place you'll love to live.
+          </h1>
+          <h5 class="text-[var(--text-color)] mb-[2rem] md:mb-[8rem]">
+            Get the best real estate deals first, before they hit the mass
+            market! Hot foreclosure deals with one simple search.
+          </h5>
+          <button
+            class="bg-[var(--main-color)] text-white h-auto px-8 py-3 rounded-lg"
+          >
+            More About Us
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Information ,  Rate , feature-->
+    <div class="container mx-auto h-[75rem] bg-red-500"></div>
   </body>
 </html>

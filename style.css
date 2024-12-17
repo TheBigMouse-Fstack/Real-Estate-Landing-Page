@@ -8,3 +8,8 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
+:root {
+  --bg-color: #e6f0ff;
+  --main-color: #000228;
+  --text-color: #5a6473;
+}
